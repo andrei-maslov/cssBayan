@@ -1,0 +1,70 @@
+/*phone*/
+@media screen and (max-width: 480px) {
+    .container {
+        width: 280px;
+    }
+    .meme-img {
+        width: 200px;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .container {
+        width: 450px;
+    }
+
+    .meme-img {
+        width: 390px;
+    }
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.meme-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-button:checked + label .meme-content, 
+.radio-button:hover + label .meme-content {
+    display: block;
+}
+
+.meme-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.meme-content {
+    display: none;
+}
+
+.meme-state-icon {
+    display: inline;
+    position: inherit;
+    top: 10px;
+    right: 10px;
+}
+
+.h2 {
+    border-top-width: 5px;
+    border-top-color: gray;
+}
+
+.meme-state-icon {
+    width: 15px;
+    height: 15px;
+
+    background-image: url("img/cross.png");
+}

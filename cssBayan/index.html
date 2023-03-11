@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
     <title>CSS Bayan</title>
 </head>
+
 <body>
     <div class="container">
         <h1>CSS Bayan</h1>
         <div class="accordion">
+            <hr>
+            <input class="radio-button" type="radio" checked id="meme_1" name="common">
+            <label class="meme-container" for="meme_1">
+                <div class="meme">
+                    <h2 class="meme-header">
+                        <div>Black meme</div>
+                        <div class="meme-state-icon"></div>
+                    </h2>
+                    <div class="meme-content"><img class="meme-img" src="img/black-meme.png" alt="black meme"></div>
+                </div>
+            </label>
+
+            <hr>
+            <input class="radio-button" type="radio" id="meme_2" name="common">
+            <label class="meme-container" for="meme_2">
+                <div class="meme">
+                    <h2 class="meme-header">
+                        <div>Blue meme</div>
+                        <div class="meme-state-icon"></div>
+                    </h2>
+                    <div class="meme-content"><img class="meme-img" src="img/blue-meme.png" alt="blue meme"></div>
+                </div>
+            </label>
+
+            <hr>
+            <input class="radio-button" type="radio" id="meme_3" name="common">
+            <label class="meme-container" for="meme_3">
             <div class="meme">
-                <div class="meme-header"><span>Black meme</span><div class="meme-state-icon"></div></div>
-                <div class="meme-content"><img src="img/black-meme.png" alt="black meme"></div>
+                <h2 class="meme-header">
+                    <div>Green meme</div>
+                    <div class="meme-state-icon"></div>
+                </h2>
+                <div class="meme-content"><img class="meme-img" src="img/green-meme.png" alt="green meme"></div>
             </div>
+            </label>
+
+            <hr>
+            <input class="radio-button" type="radio" id="meme_4" name="common">
+            <label class="meme-container" for="meme_4">
             <div class="meme">
-                <div class="meme-header"><span>Blue meme</span><div class="meme-state-icon"></div></div>
-                <div class="meme-content"><img src="img/blue-meme.png" alt="blue meme"></div>
+                <h2 class="meme-header">
+                    <div>Red meme</div>
+                    <div class="meme-state-icon"></div>
+                </h2>
+                <div class="meme-content"><img class="meme-img" src="img/red-meme.png" alt="red meme"></div>
             </div>
+            </label>
+
+            <hr>
+            <input class="radio-button" type="radio" id="meme_5" name="common">
+            <label class="meme-container" for="meme_5">
             <div class="meme">
-                <div class="meme-header"><span>Green meme</span><div class="meme-state-icon"></div></div>
-                <div class="meme-content"><img src="img/green-meme.png" alt="green meme"></div>
+                <h2 class="meme-header">
+                    <div>Yellow meme</div>
+                    <div class="meme-state-icon"></div>
+                </h2>
+                <div class="meme-content"><img class="meme-img" src="img/yellow-meme.png" alt="yellow meme"></div>
             </div>
-            <div class="meme">
-                <div class="meme-header"><span>Red meme</span><div class="meme-state-icon"></div></div>
-                <div class="meme-content"><img src="img/red-meme.png" alt="red meme"></div>
-            </div>
-            <div class="meme">
-                <div class="meme-header"><span>Yellow meme</span><div class="meme-state-icon"></div></div>
-                <div class="meme-content"><img src="img/yellow-meme.png" alt="yellow meme"></div>
-            </div>
+            </label>
         </div>
     </div>
 </body>
+
 </html>
