@@ -29,25 +29,31 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 0%;
+  opacity: 0;
+  height: auto;
+  transition: width .5s, opacity .7s;
 }
 
 .radio-button {
     display: none;
 }
 
-.radio-button:checked + label .meme-content {
-    display: block;
+.radio-button:checked + label .meme-state-icon {
+    transform: rotate(0);
+    transition: transform .5s;
 }
 
+.radio-button:checked + label .meme-img {
+    width: 100%;
+    opacity: 1;
+    transition: width .5s, opacity .3s;
+}
 
 .meme-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.meme-content {
-    display: none;
 }
 
 .meme-state-icon {
@@ -69,22 +75,29 @@
     right: 10px;
     width: 25px;
     height: 25px;
+    transform: rotate(45deg);
+    transition: transform .5s;
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-color: darkgreen; */
     background-image: url("../img/cross.png");
-    border: 1px black solid;
 }
 
 @media (hover:hover) {
     .meme-state-icon {
         display: none;
     }
-
-    .radio-button:hover + label .meme-content {
-        display: block;
-    }
     
+    .radio-button:hover + label .meme-state-icon {
+        transform: rotate(0);
+        transition: transform .5s;
+    }
+
+    .radio-button:hover + label .meme-img {
+        width: 100%;
+        opacity: 1;
+        transition: width .5s, opacity .3s;
+    }
+
     .accordion:hover .meme-state-icon {
         display: block;
     }
