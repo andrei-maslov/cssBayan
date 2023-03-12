@@ -22,6 +22,9 @@
 .container {
     max-width: 950px;
     margin: auto;
+}
+
+.accordion div,label,h2,img {
     cursor: pointer;
 }
 
