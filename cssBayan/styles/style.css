@@ -68,6 +68,11 @@
     border-top-color: gray;
 }
 
+.meme {
+    border-top: 2px solid gray;
+    margin-top: 5px;
+}
+
 .meme-state-icon {
     display: inline;
     position: inherit;
